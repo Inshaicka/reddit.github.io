@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>RedDude - drive into anything</title>
+	<link rel="stylesheet" href="style.css">
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+	<nav>
+		<div class ="left">
+			<div class="menu">
+				<span class="menu-btn" onclick="openNav()"><i class='bx bx-menu'></i></span>
+			</div>
+			<div class="logo">
+				<img src='D:\Frontend\Reddit\images\reddit.png'>
+			</div>
+		</div>
+		<div class="search">		
+			<input type= 'text' placeholder='Search' autocomplete="off" inputmode>
+			<button> <i class='bx bx-search'></i></button>
+		</div>
+		<div class="buttons">
+			<button class="login-btn"><a href="D:/Frontend/Reddit/login/login.html">Login</a></button>
+			<button class="profile-btn"><a href="D:/Frontend/Reddit/profile/profile.html">Profile</a></button>
+		</div>		
+	</nav>
+
+	<div class="profile">
+		<img src="D:\Frontend\Reddit\images\avatar.png">
+		<div class="user">
+			<span class="nickname"> Nervous-Level-9797 </span>
+			<span class="url"> u/Nervous-Level-9797 </span> 			
+		</div>
+	</div>
+
+	<div id="posts">
+		<h2> Your Posts</h2>
+	</div>
+
+
+
+	<div class="rules">
+		<h3> Posting Rules </h3>
+		<ol>
+			<li> Remember the human </li>
+			<li> Behave like you would in real life </li>
+			<li> Look for the original source of content </li>
+			<li> Search for duplicates before posting </li>
+			<li> Read the community’s rules </li>
+		</ol>
+
+	</div>	
+
+	<div class="create">
+		<h5> Create a post </h5>
+		<form class="postForm">
+			<textarea class='title' type="text" placeholder="Title" autocomplete="off" inputmode></textarea>
+			<textarea class='text' type="text" placeholder="Text" autocomplete="off" inputmode> </textarea>
+			<button class="post-btn">Post</button>
+		</form>
+	</div>
+
+
+	<div id="mySidenav" class="sidenav">
+		<a href="javascript:void(0" class="close-btn" onclick="closeNav()">&times;</a>
+		<a href="D:/Frontend/Reddit/general/general.html">Home</a>
+		<a href="D:/Frontend/Reddit/profile/profile.html">Profile</a>
+	</div>
+
+
+	<script src="script.js"></script>
+</body>
+</html>
